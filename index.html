@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmpresaLogística — Soluciones Marítimas Globales</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <i class="fas fa-ship"></i>
+      <span>Empresa<strong>Logística</strong></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#rutas">Rutas</a></li>
+      <li><a href="#contenedores">Contenedores</a></li>
+      <li><a href="#trazabilidad">Trazabilidad</a></li>
+      <li><a href="#sectores">Sectores</a></li>
+      <li><a href="#bot-demo" class="btn-nav-bot"><i class="fas fa-robot"></i> IA Bot</a></li>
+      <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <div class="waves-container">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+          <path id="wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"/>
+        </defs>
+        <g class="wave-parallax">
+          <use href="#wave" x="48" y="0" fill="rgba(0,120,212,0.15)"/>
+          <use href="#wave" x="48" y="3" fill="rgba(0,120,212,0.10)"/>
+          <use href="#wave" x="48" y="5" fill="rgba(0,120,212,0.07)"/>
+          <use href="#wave" x="48" y="7" fill="rgba(0,80,160,0.4)"/>
+        </g>
+      </svg>
+    </div>
+    <div class="hero-particles" id="particles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-globe"></i> Presencia en 97 países · 357 corresponsalías</div>
+    <h1>Logística Marítima<br/><span class="gradient-text">Sin Fronteras</span></h1>
+    <p class="hero-sub">Gestionamos tus contenedores, cargas y rutas a nivel mundial con tecnología de seguimiento en tiempo real e inteligencia artificial integrada.</p>
+    <div class="hero-cta">
+      <a href="#bot-demo" class="btn-primary"><i class="fas fa-robot"></i> Consultar con IA ahora</a>
+      <a href="#servicios" class="btn-secondary"><i class="fas fa-play"></i> Ver servicios</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num" data-target="12480">0</span>
+        <span class="stat-label">Contenedores activos</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="97">0</span>
+        <span class="stat-label">Países</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="48">0</span>
+        <span class="stat-label">Navieras partner</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="55">0</span>
+        <span class="stat-label">Años de experiencia</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-ship">
+    <img src="https://cdn-icons-png.flaticon.com/512/4305/4305522.png" alt="cargo ship" class="floating-ship" />
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="section" id="servicios">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Lo que hacemos</span>
+      <h2>Servicios Logísticos <span class="gradient-text">Completos</span></h2>
+      <p>Desde el origen hasta el destino, cubrimos toda la cadena de suministro marítima nacional e internacional.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card featured">
+        <div class="service-icon"><i class="fas fa-ship"></i></div>
+        <h3>Transporte Marítimo</h3>
+        <p>Exportaciones, importaciones y cross-trade en DRY, REEF y equipos especiales a cualquier punto del mundo.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check"></i> FCL / LCL</li>
+          <li><i class="fas fa-check"></i> Contenedores especiales</li>
+          <li><i class="fas fa-check"></i> Cross-trade internacional</li>
+          <li><i class="fas fa-check"></i> Peligrosas (IMO)</li>
+        </ul>
+        <span class="service-badge">Principal</span>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-truck"></i></div>
+        <h3>Transporte Terrestre</h3>
+        <p>Distribución nacional e internacional con flota propia y control sanitario para industria alimentaria.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check"></i> Grupaje europeo</li>
+          <li><i class="fas fa-check"></i> Carga completa</li>
+          <li><i class="fas fa-check"></i> Almacenaje intermedio</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-plane"></i></div>
+        <h3>Transporte Aéreo</h3>
+        <p>Recogida, consolidación y entrega puerta a puerta en cualquier país del mundo con rapidez máxima.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check"></i> Express 24/48h</li>
+          <li><i class="fas fa-check"></i> Carga general</li>
+          <li><i class="fas fa-check"></i> Mercancía peligrosa IATA</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-temperature-low"></i></div>
+        <h3>Transporte Frigorífico</h3>
+        <p>Control de temperatura certificado para farmacéutica, alimentación fresca y productos de alta sensibilidad.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check"></i> -25°C a +25°C</li>
+          <li><i class="fas fa-check"></i> Reefer containers</li>
+          <li><i class="fas fa-check"></i> Trazabilidad térmica</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-file-contract"></i></div>
+        <h3>Gestión Aduanera</h3>
+        <p>Despachos de importación y exportación, regímenes especiales y consultoría arancelaria personalizada.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check"></i> DAU / DUA</li>
+          <li><i class="fas fa-check"></i> Regímenes suspensivos</li>
+          <li><i class="fas fa-check"></i> Asesoría fiscal</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-warehouse"></i></div>
+        <h3>Almacenaje y Distribución</h3>
+        <p>Centros logísticos propios con gestión de stock, picking, packing y distribución last-mile optimizada.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check"></i> WMS integrado</li>
+          <li><i class="fas fa-check"></i> Cross-docking</li>
+          <li><i class="fas fa-check"></i> Zona franca</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-leaf"></i></div>
+        <h3>Green Logistics</h3>
+        <p>Transporte sostenible con compensación de huella de carbono, rutas optimizadas y flota eléctrica urbana.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check"></i> CO2 neutral</li>
+          <li><i class="fas fa-check"></i> Certificación ISO 14001</li>
+          <li><i class="fas fa-check"></i> Reporting ESG</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Seguros de Carga</h3>
+        <p>Cobertura integral de mercancías en tránsito, almacenadas o en operaciones de carga y descarga.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check"></i> All-risk marítimo</li>
+          <li><i class="fas fa-check"></i> Aéreo y terrestre</li>
+          <li><i class="fas fa-check"></i> Multimodal</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RUTAS MUNDIALES -->
+<section class="section bg-dark" id="rutas">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag">Cobertura global</span>
+      <h2>Rutas Marítimas <span class="gradient-text">Principales</span></h2>
+      <p>Operamos en las rutas más importantes del comercio marítimo mundial con frecuencias semanales garantizadas.</p>
+    </div>
+    <div class="routes-grid">
+      <div class="route-card">
+        <div class="route-flag">🇪🇸 → 🇺🇸</div>
+        <h4>España — Estados Unidos</h4>
+        <div class="route-details">
+          <span><i class="fas fa-clock"></i> 14-18 días</span>
+          <span><i class="fas fa-ship"></i> Maersk, MSC, CMA CGM</span>
+          <span><i class="fas fa-cube"></i> FCL 20'/40' · LCL</span>
+        </div>
+        <div class="route-stat">
+          <strong>847</strong> contenedores/mes
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="route-flag">🇪🇸 → 🇨🇳</div>
+        <h4>España — China / Extremo Oriente</h4>
+        <div class="route-details">
+          <span><i class="fas fa-clock"></i> 28-35 días</span>
+          <span><i class="fas fa-ship"></i> COSCO, Evergreen, HMM</span>
+          <span><i class="fas fa-cube"></i> FCL 20'/40'/45' HC</span>
+        </div>
+        <div class="route-stat">
+          <strong>1.204</strong> contenedores/mes
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="route-flag">🇪🇸 → 🇧🇷</div>
+        <h4>España — Latinoamérica</h4>
+        <div class="route-details">
+          <span><i class="fas fa-clock"></i> 12-20 días</span>
+          <span><i class="fas fa-ship"></i> Hamburg Sud, Hapag-Lloyd</span>
+          <span><i class="fas fa-cube"></i> FCL · Reefer · OOG</span>
+        </div>
+        <div class="route-stat">
+          <strong>632</strong> contenedores/mes
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="route-flag">🇪🇸 → 🌍</div>
+        <h4>España — África Occidental</h4>
+        <div class="route-details">
+          <span><i class="fas fa-clock"></i> 8-15 días</span>
+          <span><i class="fas fa-ship"></i> CMA CGM, Grimaldi, MSC</span>
+          <span><i class="fas fa-cube"></i> FCL 20'/40' · Reefer</span>
+        </div>
+        <div class="route-stat">
+          <strong>298</strong> contenedores/mes
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="route-flag">🇪🇸 → 🇮🇳</div>
+        <h4>España — Subcontinente Indio</h4>
+        <div class="route-details">
+          <span><i class="fas fa-clock"></i> 22-28 días</span>
+          <span><i class="fas fa-ship"></i> MOL, Yang Ming, ONE</span>
+          <span><i class="fas fa-cube"></i> FCL · Hazmat · OOG</span>
+        </div>
+        <div class="route-stat">
+          <strong>412</strong> contenedores/mes
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="route-flag">🇪🇸 → 🇦🇺</div>
+        <h4>España — Oceanía / Pacífico</h4>
+        <div class="route-details">
+          <span><i class="fas fa-clock"></i> 30-40 días</span>
+          <span><i class="fas fa-ship"></i> ANL, PIL, Evergreen</span>
+          <span><i class="fas fa-cube"></i> FCL 20'/40' HC</span>
+        </div>
+        <div class="route-stat">
+          <strong>156</strong> contenedores/mes
+        </div>
+      </div>
+    </div>
+    <div class="navieras-section">
+      <h3>Navieras Partner</h3>
+      <div class="navieras-list">
+        <div class="naviera-badge">🚢 Maersk</div>
+        <div class="naviera-badge">🚢 MSC</div>
+        <div class="naviera-badge">🚢 CMA CGM</div>
+        <div class="naviera-badge">🚢 COSCO</div>
+        <div class="naviera-badge">🚢 Hapag-Lloyd</div>
+        <div class="naviera-badge">🚢 Evergreen</div>
+        <div class="naviera-badge">🚢 ONE</div>
+        <div class="naviera-badge">🚢 Yang Ming</div>
+        <div class="naviera-badge">🚢 Hamburg Süd</div>
+        <div class="naviera-badge">🚢 Grimaldi</div>
+        <div class="naviera-badge">🚢 HMM</div>
+        <div class="naviera-badge">🚢 ZIM</div>
+        <div class="naviera-badge">🚢 PIL</div>
+        <div class="naviera-badge">🚢 OOCL</div>
+        <div class="naviera-badge">🚢 +34 más</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENEDORES -->
+<section class="section" id="contenedores">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Equipamiento</span>
+      <h2>Tipos de <span class="gradient-text">Contenedores</span></h2>
+      <p>Disponemos de toda la gama de contenedores para cualquier tipo de carga, medida y necesidad.</p>
+    </div>
+    <div class="containers-grid">
+      <div class="container-card">
+        <div class="container-img dry"><i class="fas fa-box"></i></div>
+        <h4>Dry Van</h4>
+        <div class="container-sizes">
+          <span>20' Standard</span>
+          <span>40' Standard</span>
+          <span>40' High Cube</span>
+          <span>45' High Cube</span>
+        </div>
+        <p>Carga general seca, palletizada o a granel ensacado.</p>
+        <div class="container-specs">
+          <div><strong>Cap. máx.</strong><br/>28.200 kg</div>
+          <div><strong>Volumen</strong><br/>76 m³</div>
+          <div><strong>Disponibilidad</strong><br/>Alta</div>
+        </div>
+      </div>
+      <div class="container-card">
+        <div class="container-img reefer"><i class="fas fa-snowflake"></i></div>
+        <h4>Reefer</h4>
+        <div class="container-sizes">
+          <span>20' Reefer</span>
+          <span>40' Reefer</span>
+          <span>40' HC Reefer</span>
+        </div>
+        <p>Carga refrigerada o congelada con control activo de temperatura.</p>
+        <div class="container-specs">
+          <div><strong>Temperatura</strong><br/>-30°C a +30°C</div>
+          <div><strong>Volumen</strong><br/>67 m³</div>
+          <div><strong>Monitoreo</strong><br/>24/7</div>
+        </div>
+      </div>
+      <div class="container-card">
+        <div class="container-img oog"><i class="fas fa-expand-arrows-alt"></i></div>
+        <h4>Open Top</h4>
+        <div class="container-sizes">
+          <span>20' Open Top</span>
+          <span>40' Open Top</span>
+        </div>
+        <p>Carga de gran altura: maquinaria, piezas industriales, graneles.</p>
+        <div class="container-specs">
+          <div><strong>Altura libre</strong><br/>Ilimitada</div>
+          <div><strong>Carga máx.</strong><br/>28.500 kg</div>
+          <div><strong>Lona</strong><br/>Incluida</div>
+        </div>
+      </div>
+      <div class="container-card">
+        <div class="container-img flatrack"><i class="fas fa-minus"></i></div>
+        <h4>Flat Rack</h4>
+        <div class="container-sizes">
+          <span>20' Flat</span>
+          <span>40' Flat</span>
+          <span>40' Collapsible</span>
+        </div>
+        <p>Maquinaria pesada, vehículos, piezas sobredimensionadas (OOG).</p>
+        <div class="container-specs">
+          <div><strong>Carga máx.</strong><br/>40.000 kg</div>
+          <div><strong>Ancho libre</strong><br/>2.28 m</div>
+          <div><strong>OOG</strong><br/>Sí</div>
+        </div>
+      </div>
+      <div class="container-card">
+        <div class="container-img tank"><i class="fas fa-tint"></i></div>
+        <h4>Tanque ISO</h4>
+        <div class="container-sizes">
+          <span>T11 General</span>
+          <span>T14 Ácidos</span>
+          <span>T75 Criogénico</span>
+        </div>
+        <p>Líquidos a granel, productos químicos, alimentarios y gases licuados.</p>
+        <div class="container-specs">
+          <div><strong>Capacidad</strong><br/>21.000 L</div>
+          <div><strong>IMO</strong><br/>Certificado</div>
+          <div><strong>Limpieza</strong><br/>Incluida</div>
+        </div>
+      </div>
+      <div class="container-card">
+        <div class="container-img hazmat"><i class="fas fa-biohazard"></i></div>
+        <h4>Mercancía Peligrosa</h4>
+        <div class="container-sizes">
+          <span>Todas las clases IMDG</span>
+          <span>ADR Terrestre</span>
+          <span>IATA Aéreo</span>
+        </div>
+        <p>Gestión integral de peligrosas con documentación ADR/IMDG completa.</p>
+        <div class="container-specs">
+          <div><strong>Clases</strong><br/>1 al 9</div>
+          <div><strong>Asesoría</strong><br/>Incluida</div>
+          <div><strong>DGD</strong><br/>Digital</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAZABILIDAD -->
+<section class="section bg-gradient" id="trazabilidad">
+  <div class="container">
+    <div class="track-layout">
+      <div class="track-info">
+        <span class="section-tag">GPS en tiempo real</span>
+        <h2>Trazabilidad <span class="gradient-text">Total</span></h2>
+        <p>Localiza tus envíos en cualquier momento desde cualquier dispositivo. Datos actualizados cada 15 minutos con alertas automáticas ante cualquier incidencia.</p>
+        <div class="track-features">
+          <div class="track-feat"><i class="fas fa-map-marker-alt"></i><span>Posición GPS en tiempo real</span></div>
+          <div class="track-feat"><i class="fas fa-bell"></i><span>Alertas de incidencias automáticas</span></div>
+          <div class="track-feat"><i class="fas fa-history"></i><span>Historial completo de movimientos</span></div>
+          <div class="track-feat"><i class="fas fa-file-pdf"></i><span>Documentación digital integrada</span></div>
+          <div class="track-feat"><i class="fas fa-thermometer-half"></i><span>Control de temperatura en Reefer</span></div>
+          <div class="track-feat"><i class="fas fa-robot"></i><span>IA predictiva de retrasos</span></div>
+        </div>
+      </div>
+      <div class="track-demo">
+        <div class="tracking-widget">
+          <div class="track-header">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Introduce B/L, referencia o contenedor..." value="MSKU7834921" />
+            <button><i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="track-result">
+            <div class="track-container-id">
+              <i class="fas fa-cube"></i>
+              <div>
+                <strong>MSKU 783492-1</strong>
+                <span>40' High Cube · Dry Van</span>
+              </div>
+              <div class="track-status active">En Tránsito</div>
+            </div>
+            <div class="track-progress">
+              <div class="track-step done">
+                <div class="step-dot"><i class="fas fa-check"></i></div>
+                <div class="step-info">
+                  <strong>Valencia, España</strong>
+                  <span>Cargado · 18 Mar 2025</span>
+                </div>
+              </div>
+              <div class="track-step done">
+                <div class="step-dot"><i class="fas fa-check"></i></div>
+                <div class="step-info">
+                  <strong>Puerto Algeciras</strong>
+                  <span>Transbordo completado · 21 Mar 2025</span>
+                </div>
+              </div>
+              <div class="track-step active">
+                <div class="step-dot pulsing"><i class="fas fa-ship"></i></div>
+                <div class="step-info">
+                  <strong>Atlántico Norte</strong>
+                  <span>En navegación · ETA 2 Abr 2025</span>
+                </div>
+              </div>
+              <div class="track-step">
+                <div class="step-dot pending"></div>
+                <div class="step-info">
+                  <strong>New York, EE.UU.</strong>
+                  <span>Pendiente · ETA 4 Abr 2025</span>
+                </div>
+              </div>
+            </div>
+            <div class="track-meta">
+              <div><i class="fas fa-ship"></i> Maersk Evora</div>
+              <div><i class="fas fa-user"></i> Cliente: TechExport SL</div>
+              <div><i class="fas fa-weight"></i> 24.300 kg</div>
+              <div><i class="fas fa-boxes"></i> 18 pallets</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTORES -->
+<section class="section" id="sectores">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Industrias</span>
+      <h2>Sectores que <span class="gradient-text">Atendemos</span></h2>
+    </div>
+    <div class="sectors-grid">
+      <div class="sector-card"><i class="fas fa-industry"></i><h4>Industria y Maquinaria</h4></div>
+      <div class="sector-card"><i class="fas fa-apple-alt"></i><h4>Alimentación y Bebidas</h4></div>
+      <div class="sector-card"><i class="fas fa-flask"></i><h4>Químico y Farmacéutico</h4></div>
+      <div class="sector-card"><i class="fas fa-bolt"></i><h4>Energía y Oil&Gas</h4></div>
+      <div class="sector-card"><i class="fas fa-tshirt"></i><h4>Textil y Moda</h4></div>
+      <div class="sector-card"><i class="fas fa-car"></i><h4>Automoción</h4></div>
+      <div class="sector-card"><i class="fas fa-laptop"></i><h4>Tecnología y Electrónica</h4></div>
+      <div class="sector-card"><i class="fas fa-seedling"></i><h4>Agricultura y Hortofrutícola</h4></div>
+      <div class="sector-card"><i class="fas fa-hard-hat"></i><h4>Construcción y Materiales</h4></div>
+      <div class="sector-card"><i class="fas fa-recycle"></i><h4>Reciclaje y Residuos</h4></div>
+      <div class="sector-card"><i class="fas fa-fish"></i><h4>Pesca y Acuicultura</h4></div>
+      <div class="sector-card"><i class="fas fa-wine-bottle"></i><h4>Vinos y Licores</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- CHATBOT DEMO -->
+<section class="section bg-dark bot-section" id="bot-demo">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag pulse"><i class="fas fa-robot"></i> IA Integrada con Power BI</span>
+      <h2>Consulta tus datos <span class="gradient-text">en tiempo real</span></h2>
+      <p>Pregunta en lenguaje natural y obtén datos exactos de tu Power BI al instante. Texto o voz, en cualquier idioma.</p>
+    </div>
+    <div class="bot-layout">
+      <div class="bot-features">
+        <div class="bot-feat-card">
+          <i class="fas fa-microphone"></i>
+          <h4>Voz o Texto</h4>
+          <p>Manda un audio o escribe directamente. La IA entiende ambos formatos.</p>
+        </div>
+        <div class="bot-feat-card">
+          <i class="fas fa-chart-bar"></i>
+          <h4>Power BI Directo</h4>
+          <p>Lee tus datasets en tiempo real sin abrir Power BI. Datos siempre actualizados.</p>
+        </div>
+        <div class="bot-feat-card">
+          <i class="fas fa-brain"></i>
+          <h4>IA Avanzada</h4>
+          <p>Entiende preguntas complejas y filtra por naviera, cliente, ruta, fecha y más.</p>
+        </div>
+        <div class="bot-feat-card">
+          <i class="fas fa-telegram" style="color:#29a8e0"></i>
+          <h4>Via Telegram</h4>
+          <p>Disponible 24/7 desde tu móvil. Sin apps extra, sin logins, sin complicaciones.</p>
+        </div>
+        <div class="example-queries">
+          <h4>Ejemplos de preguntas:</h4>
+          <div class="query-chip" onclick="sendExampleQuery(this)">¿Cuántos contenedores hay en EE.UU. con Maersk?</div>
+          <div class="query-chip" onclick="sendExampleQuery(this)">¿Qué cargas están pendientes de despacho?</div>
+          <div class="query-chip" onclick="sendExampleQuery(this)">Top 5 clientes por volumen este mes</div>
+          <div class="query-chip" onclick="sendExampleQuery(this)">¿Cuántos Reefer hay activos ahora mismo?</div>
+          <div class="query-chip" onclick="sendExampleQuery(this)">Retraso medio por naviera en Q1</div>
+          <div class="query-chip" onclick="sendExampleQuery(this)">Contenedores en tránsito hacia China</div>
+        </div>
+      </div>
+      <div class="chat-demo-container">
+        <div class="chat-header">
+          <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+          <div class="chat-info">
+            <strong>LogisticsAI Bot</strong>
+            <span class="online"><i class="fas fa-circle"></i> Conectado a Power BI</span>
+          </div>
+          <div class="chat-logo"><i class="fab fa-telegram"></i></div>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <div class="msg bot">
+            <div class="msg-avatar"><i class="fas fa-robot"></i></div>
+            <div class="msg-bubble">
+              👋 Hola, soy tu asistente de logística con acceso directo a Power BI.<br/><br/>
+              Puedo consultar <strong>contenedores, navieras, clientes, cargas, rutas y cualquier KPI</strong> de tu operación en tiempo real.<br/><br/>
+              ¿Qué quieres saber?
+            </div>
+          </div>
+        </div>
+        <div class="chat-input-area">
+          <div class="typing-indicator" id="typingIndicator" style="display:none">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="chat-input-row">
+            <input type="text" id="chatInput" placeholder="Pregunta sobre tus datos logísticos..." onkeypress="handleEnter(event)" />
+            <button class="btn-mic" id="micBtn" title="Nota: en integración real, acepta mensajes de voz"><i class="fas fa-microphone"></i></button>
+            <button class="btn-send" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2>¿Listo para digitalizar tu logística?</h2>
+      <p>Conecta tu Power BI, configura el bot en 48h y consulta toda tu operación desde el móvil.</p>
+      <div class="cta-buttons">
+        <a href="#contacto" class="btn-primary large"><i class="fas fa-rocket"></i> Solicitar demo personalizada</a>
+        <a href="#bot-demo" class="btn-outline large"><i class="fas fa-play"></i> Probar el bot ahora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Hablemos</span>
+      <h2>Contacta con <span class="gradient-text">nosotros</span></h2>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><strong>Sede Central</strong><span>Av. del Puerto 42, Valencia, España</span></div></div>
+        <div class="contact-item"><i class="fas fa-phone"></i><div><strong>Teléfono</strong><span>+34 900 100 200</span></div></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><span>info@empresalogistica.com</span></div></div>
+        <div class="contact-item"><i class="fas fa-clock"></i><div><strong>Horario</strong><span>24/7 — Operaciones sin pausa</span></div></div>
+        <div class="contact-offices">
+          <h4>Oficinas:</h4>
+          <div class="offices-list">
+            <span>🇪🇸 Valencia</span>
+            <span>🇪🇸 Barcelona</span>
+            <span>🇪🇸 Algeciras</span>
+            <span>🇪🇸 Madrid</span>
+            <span>🇬🇧 Londres</span>
+            <span>🇵🇱 Varsovia</span>
+            <span>🇩🇪 Hamburgo</span>
+            <span>🇺🇸 New York</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleFormSubmit(event)">
+        <div class="form-row">
+          <div class="form-group"><label>Nombre</label><input type="text" placeholder="Tu nombre" required /></div>
+          <div class="form-group"><label>Empresa</label><input type="text" placeholder="Tu empresa" /></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Email</label><input type="email" placeholder="correo@empresa.com" required /></div>
+          <div class="form-group"><label>Teléfono</label><input type="tel" placeholder="+34 600 000 000" /></div>
+        </div>
+        <div class="form-group">
+          <label>¿Qué necesitas?</label>
+          <select>
+            <option>Consulta sobre transporte marítimo</option>
+            <option>Demo del bot de IA / Power BI</option>
+            <option>Trazabilidad y tracking</option>
+            <option>Gestión aduanera</option>
+            <option>Otro servicio</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Mensaje</label><textarea placeholder="Cuéntanos tu necesidad..." rows="4"></textarea></div>
+        <button type="submit" class="btn-primary full"><i class="fas fa-paper-plane"></i> Enviar consulta</button>
+        <div class="form-success" id="formSuccess" style="display:none">
+          <i class="fas fa-check-circle"></i> ¡Mensaje enviado! Te contactaremos en menos de 2 horas.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><i class="fas fa-ship"></i><span>Empresa<strong>Logística</strong></span></div>
+        <p>Soluciones marítimas globales con más de 55 años de experiencia. Conectamos tu negocio con el mundo.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Servicios</h5>
+        <a href="#">Marítimo</a><a href="#">Terrestre</a><a href="#">Aéreo</a>
+        <a href="#">Frigorífico</a><a href="#">Aduanas</a><a href="#">Almacenaje</a>
+      </div>
+      <div class="footer-col">
+        <h5>Empresa</h5>
+        <a href="#">Quiénes somos</a><a href="#">Noticias</a><a href="#">Trabaja con nosotros</a>
+        <a href="#">Sostenibilidad</a><a href="#">Certificaciones</a>
+      </div>
+      <div class="footer-col">
+        <h5>Herramientas</h5>
+        <a href="#">Portal clientes</a><a href="#">Trazabilidad</a><a href="#">Bot IA</a>
+        <a href="#">Cotizador online</a><a href="#">Documentación</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EmpresaLogística · Todos los derechos reservados</p>
+      <p>Aviso legal · Privacidad · Cookies</p>
+    </div>
+  </div>
+</footer>
+
+<script src="chatbot.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
