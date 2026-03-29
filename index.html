@@ -541,9 +541,10 @@
           <div class="msg bot">
             <div class="msg-avatar"><i class="fas fa-robot"></i></div>
             <div class="msg-bubble">
-              👋 Hola, soy tu asistente de logística con acceso directo a Power BI.<br/><br/>
-              Puedo consultar <strong>contenedores, navieras, clientes, cargas, rutas y cualquier KPI</strong> de tu operación en tiempo real.<br/><br/>
-              ¿Qué quieres saber?
+              👋 ¡Hola! Soy el bot de logística conectado a <strong>Power BI en tiempo real</strong>.<br/><br/>
+              🧪 <strong>Esto es una demo en vivo.</strong> Haz tu prueba aquí mismo y comprueba lo que puede hacer este bot con tus datos reales de logística marítima.<br/><br/>
+              Puedo responder sobre <strong>contenedores, navieras, clientes, reefer, retrasos, KPIs, aduanas</strong> y mucho más.<br/><br/>
+              💬 Escribe cualquier pregunta como si le preguntaras a una persona, o haz clic en los ejemplos de la izquierda. ¡Sorpréndete!
             </div>
           </div>
         </div>
@@ -581,52 +582,48 @@
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Hablemos</span>
-      <h2>Contacta con <span class="gradient-text">nosotros</span></h2>
+      <h2>Contacta con <span class="gradient-text">FlowNexion</span></h2>
+      <p>Somos la agencia de IA y automatización detrás de esta solución. Te conectamos Power BI con un bot en 48h.</p>
     </div>
     <div class="contact-layout">
       <div class="contact-info">
-        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><strong>Sede Central</strong><span>Av. del Puerto 42, Valencia, España</span></div></div>
-        <div class="contact-item"><i class="fas fa-phone"></i><div><strong>Teléfono</strong><span>+34 900 100 200</span></div></div>
-        <div class="contact-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><span>info@empresalogistica.com</span></div></div>
-        <div class="contact-item"><i class="fas fa-clock"></i><div><strong>Horario</strong><span>24/7 — Operaciones sin pausa</span></div></div>
+        <div class="contact-item"><i class="fas fa-robot"></i><div><strong>Solución desarrollada por</strong><span><a href="https://flownexion.com" target="_blank" style="color:var(--accent);text-decoration:none;">FlowNexion — IA & Automatización</a></span></div></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><div><strong>Email directo</strong><span><a href="mailto:juancarlos@flownexion.com" style="color:var(--accent);text-decoration:none;">juancarlos@flownexion.com</a></span></div></div>
+        <div class="contact-item"><i class="fas fa-globe"></i><div><strong>Web</strong><span><a href="https://flownexion.com" target="_blank" style="color:var(--accent);text-decoration:none;">flownexion.com</a></span></div></div>
+        <div class="contact-item"><i class="fas fa-clock"></i><div><strong>Respuesta</strong><span>En menos de 2 horas en horario laboral</span></div></div>
         <div class="contact-offices">
-          <h4>Oficinas:</h4>
-          <div class="offices-list">
-            <span>🇪🇸 Valencia</span>
-            <span>🇪🇸 Barcelona</span>
-            <span>🇪🇸 Algeciras</span>
-            <span>🇪🇸 Madrid</span>
-            <span>🇬🇧 Londres</span>
-            <span>🇵🇱 Varsovia</span>
-            <span>🇩🇪 Hamburgo</span>
-            <span>🇺🇸 New York</span>
-          </div>
+          <h4>¿Quieres este bot para tu empresa?</h4>
+          <p style="color:var(--text-muted);font-size:0.875rem;margin-bottom:16px;">En <strong style="color:#fff">FlowNexion</strong> conectamos tu Power BI con un bot inteligente que responde en segundos. Escríbenos y te hacemos una demo con tus datos reales.</p>
+          <a href="mailto:juancarlos@flownexion.com" class="btn-primary" style="display:inline-flex;font-size:0.875rem;padding:10px 20px;">
+            <i class="fas fa-paper-plane"></i> Escríbenos ahora
+          </a>
         </div>
       </div>
-      <form class="contact-form" onsubmit="handleFormSubmit(event)">
+      <form class="contact-form" action="https://formsubmit.co/juancarlos@flownexion.com" method="POST">
+        <input type="hidden" name="_subject" value="Nueva consulta desde EmpresaLogística Bot Demo" />
+        <input type="hidden" name="_next" value="https://empresa-logistica-bot.vercel.app/#contacto" />
+        <input type="hidden" name="_captcha" value="false" />
         <div class="form-row">
-          <div class="form-group"><label>Nombre</label><input type="text" placeholder="Tu nombre" required /></div>
-          <div class="form-group"><label>Empresa</label><input type="text" placeholder="Tu empresa" /></div>
+          <div class="form-group"><label>Nombre</label><input type="text" name="nombre" placeholder="Tu nombre" required /></div>
+          <div class="form-group"><label>Empresa</label><input type="text" name="empresa" placeholder="Tu empresa" /></div>
         </div>
         <div class="form-row">
-          <div class="form-group"><label>Email</label><input type="email" placeholder="correo@empresa.com" required /></div>
-          <div class="form-group"><label>Teléfono</label><input type="tel" placeholder="+34 600 000 000" /></div>
+          <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="correo@empresa.com" required /></div>
+          <div class="form-group"><label>Teléfono</label><input type="tel" name="telefono" placeholder="+34 600 000 000" /></div>
         </div>
         <div class="form-group">
           <label>¿Qué necesitas?</label>
-          <select>
-            <option>Consulta sobre transporte marítimo</option>
+          <select name="servicio">
             <option>Demo del bot de IA / Power BI</option>
-            <option>Trazabilidad y tracking</option>
-            <option>Gestión aduanera</option>
-            <option>Otro servicio</option>
+            <option>Consulta sobre logística marítima</option>
+            <option>Integración con mis sistemas</option>
+            <option>Automatización de procesos</option>
+            <option>Otro</option>
           </select>
         </div>
-        <div class="form-group"><label>Mensaje</label><textarea placeholder="Cuéntanos tu necesidad..." rows="4"></textarea></div>
-        <button type="submit" class="btn-primary full"><i class="fas fa-paper-plane"></i> Enviar consulta</button>
-        <div class="form-success" id="formSuccess" style="display:none">
-          <i class="fas fa-check-circle"></i> ¡Mensaje enviado! Te contactaremos en menos de 2 horas.
-        </div>
+        <div class="form-group"><label>Mensaje</label><textarea name="mensaje" placeholder="Cuéntanos qué datos tienes en Power BI y qué quieres consultar con el bot..." rows="4"></textarea></div>
+        <button type="submit" class="btn-primary full"><i class="fas fa-paper-plane"></i> Enviar consulta a FlowNexion</button>
+        <p style="text-align:center;font-size:0.78rem;color:var(--text-muted);margin-top:12px;">Tu mensaje llegará directamente a <strong style="color:#fff">juancarlos@flownexion.com</strong></p>
       </form>
     </div>
   </div>
